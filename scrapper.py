@@ -5,16 +5,16 @@ from selenium.webdriver import Chrome as wdChrome, Firefox as wdFirefox, Edge as
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service as ChromeService
-# from selenium.webdriver.edge.service import Service as EdgeService
-# from selenium.wAebdriver.firefox.service import Service as FirefoxService
+from selenium.webdriver.edge.service import Service as EdgeService
+from selenium.wAebdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import selenium.common.exceptions as selExcep 
 
 from webdriver_manager.chrome import ChromeDriverManager
-# from webdriver_manager.firefox import GeckoDriverManager
-# from webdriver_manager.microsoft import EdgeChromiumDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 
 import pandas as pd
@@ -40,7 +40,7 @@ with open("keywords.txt") as keywords:
 
 # %%
 home_url = 'https://www.google.com/maps/place/Lahore,+Punjab,+Pakistan/@74.1943055,31.4831569,11z/data=!3m1!4b1!4m5!3m4!1s0x39190483e58107d9:0xc23abe6ccc7e2462!8m2!3d31.5203696!4d74.3587473'
-driver_type = "chrome"
+driver_type = "chromeium"
 service = ChromeService(executable_path = ChromeDriverManager().install())
 driver = wdChrome(service= service)
 driver.get(home_url)
