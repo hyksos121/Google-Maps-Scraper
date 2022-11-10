@@ -1,6 +1,6 @@
 accounting
 airport
-amusement_park
+amusement park
 aquarium
 art_gallery
 atm
@@ -52,7 +52,6 @@ light_rail_station
 liquor_store
 local_government_office
 locksmith
-lodging
 meal_delivery
 meal_takeaway
 mosque
